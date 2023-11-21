@@ -1,358 +1,668 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- <link rel="shortcut-icon" type="image/png" href="img/favicon.png" /> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>720DegreeHub</title>
-  </head>
-  <body>
 
-    <!-- The header part of the landing page -->
-    <header >
-      <div class="container">
-        <div class="header-container" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-          <a href="#" class="logo">720DegreeHub</a>
-          <nav>
-            <div class="active">
-              <a href="#index">Home</a>
-              <a href="#courses">courses</a>
-              <a href="#testimonial">testimonial</a>
-              <a href="#pricing">pricing</a>
-              <a href="#contact">contact</a>
+  <!-- STYLE LINK FOR STYLECSS -->
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- <link rel="shortcut-icon" type="image/png" href="img/favicon.png" /> -->
+
+  <!-- LINK FOR FONTAWESOME ICON -->
+  <link rel="stylesheet" href="./assests/fontawesome-free-6.0.0-beta2-web/css/all.min.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,400&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>720DegreeHub</title>
+</head>
+
+<body>
+
+  <!-- The header part of the landing page -->
+  <header class="header">
+    <div class="container">
+      <nav class="header-navigation">
+        <a href="#" class="header-logo">720DegreeHub</a>
+
+
+        <!-- TO CREATE THE RESPONSIVENESS -->
+        <!-- <div class="navigation__responsive">
+          <input type="checkbox" class="navigation__checkbox">
+          <label for="" class="navigation__toggle">
+            <span class="navigation__icon">&nbsp;
+            </span>
+          </label>
+        </div> -->
+        <input type="checkbox" id="check" />
+          <!-- <label for="check" class="checkbtn" id="check-btn"> -->
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
             </div>
-          </nav>
-        
+
+      <div class="navigation__nav">
+        <ul class="header__navigation-list">
+          <li class="header__navigation-item ">
+            <a href="#index" class="header__navigation-link active">Home</a>
+          </li>
+          <li class="header__navigation-item">
+            <a href="#courses" class="header__navigation-link">courses</a>
+          </li>
+          <li class="header__navigation-item">
+            <a href="#testimonial" class="header__navigation-link">testimonial</a>
+          </li>
+          <li class="header__navigation-item">
+            <a href="#pricing" class="header__navigation-link">pricing</a>
+          </li>
+          <li class="header__navigation-item">
+            <a href="#contact" class="header__navigation-link">contact</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <!-- The hero section -->
+    <section class="hero-section aa" id="index">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="heading-primary">Get Ready <span class="reuse">To Explore The World <br> of Innovative Tech.</span>
+            <br />
+            <span class="heading-primary-main">Experience an interactive method of education and get ready for the job
+              market of the future.</span>
+            <span class="heading-primary-sub">Whether you are a novice who aspires to acquire skills, or you just can't
+              wait to get hands-on experience; We are the Lead to your full potential.
+            </span>
+          </h1>
+
+          <div class="slider-btn">
+            <a href="#contact" class="btn primary-btn">Enroll Now!</a>
+            <a href="#courses" class="btn">Read More..</a>
+          </div>
         </div>
       </div>
-    </header>
-
-
-
-  <!-- The hero section -->
-    <div class="hero-section" id="index">
-        <div class="hero-content">
-            <div class="left-hero-content">
-                <h1>Get Ready <span>To Explore The World <br> of Innovative Tech.</span></h1>
-                <p>Experience an interactive method of education and get ready for the job market of the future.</p>
-                <p>Whether you are a novice who aspires to acquire skills, or you want to learn to earn — maybe you belong to the Tech loving category, or you just can't wait to get hands-on experience; we are the Lead to your full potential.</p>
-                <div class="slider-btn">
-
-                  <a href="#contact" class="btn primary-btn">Enroll Now!</a>
-                  <a href="#courses" class="btn">Read More..</a>
-                </div>
-            </div>
-            <!-- the form at the right side  -->
-            <div class="right-hero-content">
-              <form action="" method="get">
-                <label for="fname"></label>
-                <input type="text" placeholder="First Name" required class="name" autocomplete="on" >
-
-                <label for="lname"></label>
-                <input type="text" placeholder="Last Name" required class="name" autocomplete="on" >
-
-                <label for="Email"></label>
-                <input type="email" placeholder="example@email.com" required class="email" autocomplete="on" >
-                <br>
-
-                <label for="phone"></label>
-                <input type="tel" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}"  class="phone"  >
-
-                <textarea name="" id="" cols="30" rows="10">Message.......
-                </textarea>
-             <input type="submit" value="Contact Us..">
-          </form>
-            </div>
-        </div>
-    </div>
+    </section>
 
 
     <!-- the section for available courses -->
-  <section class="courses-section" id="courses">
-    <div class="container">
-      <!-- courses -->
-      <div class="courses-header" >
-        <h2> 
-        <span  class="reuse">Courses</span>
-        </h2>
-        <h5>With our tech-focused career programs, you'll have the opportunity to work on real-world projects
-          that are curated by industry professionals and tailored to the latest trends and developments in the tech industry.</h5>
-      </div>
-
-      <!-- all courses in group -->
-      <div class="courses-group">
-        <div class="courses">
-          <img src="./images/front-end.avif" alt="website development" width="" height="">
-          <div class="courses-content">
-            <h2>FRONT-END DEVELOPMENT</h2>
-            <p>Creating the user interface and user experience of a website or application. 
-              Front-end developers use technologies like HTML, CSS, and JavaScript to build visually  appealing and interactive elements that users interact with directly.</p>
-              <span><button class="button">Enroll Now&rarr;</button></span>
-          </div>
+    <section class="courses-section aa" id="courses">
+      <div class="container">
+        <div class="courses-header">
+          <h2 class="heading-secondary u-margin-bottom-small">courses</h2>
+          <h3 class="heading-tertiary u-text-center u-margin-bottom-medium">With our tech-focused career programs,
+            you'll have the opportunity to work on real-world projects
+            that are curated by industry professionals and tailored to the latest trends and developments in the tech
+            industry.</h3>
         </div>
 
-        <div class="courses">
-          <img src="./images/backend.avif" alt="sever-side" width="" height="">
-          <div class="courses-content">
-            <h2>BACK-END DEVELOPMENT</h2>
-            <p>Develop the skill to build server-side of web applications, managing databases, server logic, and ensuring data processing with popular
-              server language; Python, Ruby, PHP, Node.Js to be capable to handle behind-the-scenes functionality of websites and applications.
-              </p>
-              <span><button class="button">Enroll Now&rarr;</button></span>
-          </div>
-        </div>
-
-        <div class="courses">
-          <img src="./images/data.avif" alt="Data analytic" width=" " height="">
-          <div class="courses-content">
-            <h2>DATA ANALYTICS</h2>
-            <p>You'll learn how to interpret practical insight from client's big data to support informed decison making, 
-              and likewise master popular tools for collecting, analyzing, and visualizing it - with this flexible program.</p>
-              <span><button class="button">Enroll Now &rarr;</button></span>
-          </div>
-        </div>
-
-        <div class="courses">
-          <img src="./images/digital.avif" alt="" width="" height="">
-          <div class="courses-content">
-            <h2>DIGITAL MARKETING</h2>
-             <p> Learn strategies and techniques for promoting products or services online. <!--- How best you can reach your customer? -->Our scope covers demanding skills like search engine optimization (SEO), content marketing, social media advertising
-              </p>
-              <span><button class="button">Enroll Now &rarr;</button></span>
-          </div>
-        </div>
-
-        <div class="courses">
-          <img src="./images/graphics.avif" alt="" width="" height="">
-          <div class="courses-content">
-            <h2>GRAPHICS DESIGN </h2>
-            <p>You'll learn to create visual content using elements like typography, images, and color,
-              utilize your creative skills to craft visually appealing materials such as logos, posters, and marketing collateral.
-              </p>
-              <span><button class="button">Enroll Now &rarr;</button></span>
-          </div>
-        </div>
-
-        <div class="courses">
-          <img src="./images/mobile.avif" alt="" width="" height="">
-          <div class="courses-content">
-            <h2>MOBILE-APP DEVELOPMENT</h2>
-            <p>Designing and building software applications specifically for mobile devices like smartphones and tablets, using 
-              programming languages (e.g., Java, Swift) to create apps for various platforms (iOS, Android) to deliver a range of functionalities.
-              </p>
-              <span><button class="button">Enroll Now&rarr;</button></span>
-          </div>
-        </div>
-
-        <div class="courses">
-          <img src="./images/product.avif" alt="" width="" height="">
-          <div class="courses-content">
-            <h2>PRODUCT DESIGN</h2>
-            <p>Aesthetics, usability, functionality, and user experience to create innovative and user-friendly products. likewise, they are tasked to create dynamics and control flow of web application.
-           </p>
-            <span><button class="button">Enroll Now&rarr;</button></span>
-          </div>
-        </div>
-
-        <div class="courses">
-          <img src="./images/wordpress.avif" alt="" width="" height="">
-          <div class="courses-content">
-            <h2>WORDPRESS & CMS</h2>
-            <p>Learn to build a WordPress site, and begin to get the taste for its true power by taking advantages of some easy-to-use pluggins tools.
-            </p>
-            <span><button class="button">Enroll Now&rarr;</button></span>
-          </div>
-        </div>
-      </div>
-  </section>
-
-  <!-- well state of the hub -->
-  <section class="facility-state">
-    <div class="container">
-        <h2>Sneak peek Space</h2>
-          <img src="./images/hub_state.jpg" alt="environment of the hub">
-        <div class="imag-hub">
-
-          <!-- content needed, not my original writing -->
-          <h3>A world-class learning facility</h3>
-            <p>Our learning studio is designed to inspire focused learning, creativity and collaboration. It is equiped with state-of-the-art learning equipments with no more than 10 students per class.</p>
-            <br>
-            <p>Learn in an environment that puts you in direct contact with professional web developers and software engineer.</p>
-            <br>
-            <p>You'll be provided with constant power and internet supply to make you focus on the job at hand.</p>
-        </div>
-
-    </div>
-  </section>
-
-<!-- testimonia; from some studentt -->
-  <section class="testimonial" id="testimonial">
-    <div class="container">
-      <h2>Testimonial</h2>
-        <div class="rows">
-          <div class="cards">
-             <div class="profile">
-                <img src="./images/user.jpg" alt="" class="user">
-                <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quaerat, molestiae quae pariatur non autem ipsam laudantium saepe repudiandae earum aliquam consequatur aperiam iste tempora error maxime dolore reiciendis quia? Sequi quam ut perspiciatis provident aliquam deleniti dignissimos! Doloremque iste iure ab, libero.</blockquote>
-                <h4>Akintola P.Feranmi (software developer)</h4>
-                <span>-INTERN</span>
+        <!-- all courses in group -->
+        <div class="flex__row flex__row">
+          <div class="flex__items">
+            <img src="./images/front-end.avif" alt="website development" class="course__images" style="height: 252px">
+            <div class="courses-content">
+              <h4 class="heading-master u-margin-bottom-small">FRONT-END DEVELOPMENT</h4>
+              <p class="paragraph u-margin-bottom-small">Creating the user interface and user experience of a website or
+                application.
+                Front-end developers use technologies like HTML, CSS, and JavaScript to build visually appealing and
+                interactive elements that users interact with directly.</p>
+              <a href="#" class="btn button">Enroll Now&rarr;</a>
             </div>
           </div>
-          <div class="cards">
-            <div class="profile">
-             <img src="./images/user.jpg" alt="" class="user">
-             <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quaerat, molestiae quae pariatur non autem ipsam laudantium saepe repudiandae earum aliquam consequatur aperiam iste tempora error maxime dolore reiciendis quia? Sequi quam ut perspiciatis provident aliquam deleniti dignissimos! Doloremque iste iure ab, libero.</blockquote> 
-             <h4>Akintola P.Feranmi (Full-Stack developer)</h4>
-             <span>-INTERN</span>
-           </div>
+
+          <div class="flex__items ">
+            <img src="./images/backend.avif" alt="sever-side" class="course__images" style="height: 252px">
+            <div class="courses-content">
+              <h4 class="heading-master u-margin-bottom-small">BACK-END DEVELOPMENT</h4>
+              <p class="paragraph u-margin-bottom-small">Develop the skill to build server-side of web applications,
+                managing databases, server logic, and
+                ensuring data processing with popular
+                server language; Python, Ruby, PHP, Node.Js to be capable to handle behind-the-scenes functionality of
+                websites and applications.
+              </p>
+              <a href="#" class="btn button">Enroll Now&rarr;</a>
+            </div>
           </div>
-          <div class="cards">
+
+          <div class="flex__items ">
+            <img src="./images/data.avif" alt="Data analytic" class="course__images" style="height: 252px">
+            <div class="courses-content">
+              <h4 class="heading-master u-margin-bottom-small">DATA ANALYTICS</h4>
+              <p class="paragraph u-margin-bottom-small">You'll learn how to interpret practical insight from client's
+                big data to support informed decison
+                making,
+                and likewise master popular tools for collecting, analyzing, and visualizing it - with this flexible
+                program.</p>
+              <a href="#" class="btn button">Enroll Now &rarr;</a>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <img src="./images/digital.avif" alt="Digital marketing and branding" class="course__images" style="height: 252px">
+            <div class="courses-content">
+              <h4 class="heading-master u-margin-bottom-small">DIGITAL MARKETING</h4>
+              <p class="paragraph u-margin-bottom-small"> Learn strategies and techniques for promoting products or
+                services online.
+                <!--- How best you can reach your customer? -->Our scope covers demanding skills like search engine
+                optimization (SEO), content marketing, social media advertising
+              </p>
+              <a href="#" class="btn button">Enroll Now &rarr;</a>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <img src="./images/graphics.avif" alt="logo, and brand design" class="course__images" style="height: 252px">
+            <div class="courses-content">
+              <h4 class="heading-master u-margin-bottom-small">GRAPHICS DESIGN </h4>
+              <p class="paragraph u-margin-bottom-small">You'll learn to create visual content using elements like
+                typography, images, and color,
+                utilize your creative skills to craft visually appealing materials such as logos, posters, and marketing
+                collateral.
+              </p>
+              <a href="#" class="btn button">Enroll Now &rarr;</a>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <img src="./images/mobile.avif" alt="mobile development" class="course__images" style="height: 252px">
+            <div class="courses-content">
+              <h4 class="heading-master u-margin-bottom-small">MOBILE-APP DEVELOPMENT</h4>
+              <p class="paragraph u-margin-bottom-small">Designing and building software applications specifically for
+                mobile devices like smartphones and
+                tablets, using
+                programming languages (e.g., Java, Swift) to create apps for various platforms (iOS, Android) to deliver
+                a
+                range of functionalities.
+              </p>
+              <a href="#" class="btn button">Enroll Now&rarr;</a>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <img src="./images/product.avif" alt="UI/UX design" class="course__images" style="height: 252px;">
+            <div class="courses-content">
+              <h4 class="heading-master u-margin-bottom-small">PRODUCT DESIGN</h4>
+              <p class="paragraph u-margin-bottom-small">Aesthetics, usability, functionality, and user experience to
+                create innovative and user-friendly
+                products. likewise, they are tasked to create dynamics and control flow of web application.
+              </p>
+              <a href="#" class="btn button">Enroll Now&rarr;</a>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <img src="./images/wordpress.avif" alt="CMS" class="course__images" style="height: 252px">
+            <div class="courses-content">
+              <h4 class="heading-master u-margin-bottom-small">WORDPRESS & CMS</h4>
+              <p class="paragraph u-margin-bottom-small">Learn to build a WordPress site, and begin to get the taste for
+                its true power by taking advantages of
+                some easy-to-use pluggins tools.
+              </p>
+              <a href="#" class="btn button">Enroll Now&rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- well state of the hub -->
+    <section class="facility-state aa">
+      <div class="container">
+        <h2 class="heading-secondary u-margin-bottom-big">learning Space</h2>
+
+        <div class="facility__imag-hub">
+          <!-- content needed, not my original writing -->
+          <img src="./images/hub_state.jpg" alt="environment of the hub" class="facility__photo">
+          <div class="facility__content flex-right">
+            <h3 class="heading-tertiary u-margin-bottom-small">A world-class learning facility</h3>
+            <p class="paragraph">Our learning studio is designed to inspire focused learning, creativity and
+              collaboration. It is equiped with
+              state-of-the-art learning equipments with no more than 10 students per class.</p>
+            <br>
+            <p class="paragraph">Learn in an environment that puts you in direct contact with professional web
+              developers and software
+              engineer.</p>
+            <br>
+            <p class="paragraph">You'll be provided with constant power and internet supply to make you focus on the job
+              at hand.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- testimonia; from some studentt -->
+    <section class="testimonial aa" id="testimonial">
+      <div class="container">
+        <h2 class="heading-secondary u-margin-bottom-big">Testimonial</h2>
+
+
+        <div class="flex__row">
+          <div class="flex__items-testimonial">
+            <div class="profile flew-right">
+              <img src="./images/user.jpg" alt="" class="user">
+              <blockquote class="u-margin-bottom-small">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+                quaerat, molestiae quae pariatur
+                non autem ipsam laudantium saepe repudiandae earum aliquam consequatur aperiam iste tempora error maxime
+                dolore reiciendis quia? Sequi quam ut perspiciatis provident aliquam deleniti dignissimos! Doloremque
+                iste
+                iure ab, libero.</blockquote>
+              <h4 class="heading-master u-margin-bottom-small">Akintola P.Feranmi <span class="reuse">(software
+                  developer)</span>
+                <span class="reuse">-INTERN</span>
+            </div>
+          </div>
+
+          <div class="flex__items-testimonial">
             <div class="profile">
               <img src="./images/user.jpg" alt="" class="user">
-              <blockquote>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quaerat, molestiae quae pariatur non autem ipsam laudantium saepe repudiandae earum aliquam consequatur aperiam iste tempora error maxime dolore reiciendis quia? Sequi quam ut perspiciatis provident aliquam deleniti dignissimos! Doloremque iste iure ab, libero.</blockquote>
-              <h4>Akintola P.Feranmi (CyberSecurity specialist)</h4>
-              <span>-STUDENT</span>
+              <blockquote class="u-margin-bottom-small ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+                quaerat, molestiae quae pariatur
+                non autem ipsam laudantium saepe repudiandae earum aliquam consequatur aperiam iste tempora error maxime
+                dolore reiciendis quia? Sequi quam ut perspiciatis provident aliquam deleniti dignissimos! Doloremque
+                iste
+                iure ab, libero.</blockquote>
+              <h4 class="heading-master u-margin-bottom-small"> emmanuel adesina glory<span class="reuse">(Full-Stack
+                  developer)</span>
+                <span class="reuse">-INTERN</span>
+              </h4>
+            </div>
+          </div>
+
+          <div class="flex__items-testimonial">
+            <div class="profile flex-left">
+              <img src="./images/user.jpg" alt="" class="user">
+              <blockquote class="u-margin-bottom-small ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+                quaerat, molestiae quae pariatur
+                non autem ipsam laudantium saepe repudiandae earum aliquam consequatur aperiam iste tempora error maxime
+                dolore reiciendis quia? Sequi quam ut perspiciatis provident aliquam deleniti dignissimos! Doloremque
+                iste
+                iure ab, libero.</blockquote>
+              <h4 class="heading-master u-margin-bottom-small">testimony wills <span class="reuse">(CyberSecurity
+                  specialist)</span>
+                <span class="reuse">-STUDENT</span>
+              </h4>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
-  <section class="pricing" id="pricing">
-    <div class="container">
-
-      <!-- the header contianer for the pricng of the differnet courses available -->
-      <div class="pricing-header">
-        <h2> 
-          <span  class="reuse">Our pricing</span>
-          </h2>
-          <h5>With several considerations to our pricing, we have made it affordable since we are envisioned to provide a valued solution to the current situation in our Country's economic Standard and to raise New talents that will impact the World. Kindly check for the specific details below.</h5>
       </div>
-
-          <!-- all pricing in group -->
-          <div class="pricing-group">
-            <div class="pricing-for-each">
-              <h2>FRONT-END DEVELOPMENT</h2>
+    </section>
 
 
-            </div>
-            <div class="pricing-for-each">
-              <h2>BACK-END DEVELOPMENT</h2>
+    <!-- PRICNIG FOR EACH COURSES -->
+    <section class="pricing__area" id="pricing">
+      <div class="container">
 
+        <!-- the header contianer for the pricng of the differnet courses available -->
 
-            </div>
-            <div class="pricing-for-each">
-              <h2>DATA ANALYTICS</h2>
+        <div class="pricing-header">
+          <h2 class="heading-secondary u-margin-bottom-small">OUR PRICinG</h2>
+          <h3 class="heading-tertiary u-text-center u-margin-bottom-big">With several considerations to our pricing, we
+            have made it affordable since we are envisioned to provide a
+            valued solution to the current situation in our Country's economic Standard and to raise New talents that
+            will
+            impact the World. Kindly check for the specific details below</h3>
+        </div>
 
+        <!-- all pricing in group -->
+        <div class="flex__row">
+          <div class="flex__items">
+            <div class="pricing__card">
+              <div class="pricing__heading">
+                <h4 class="heading-master u-margin-bottom-medium">FRONT-END DEVELOPMENT</h4>
+              </div>
 
-            </div>
-            <div class="pricing-for-each">
-              <h2>DIGITAL MARKETING</h2>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    physical class
+                  </h4>
+                  <span class="pricing-day">monday - Friday</span>
+                  <span class="pricing-time">9:00am -2:00pm</span>
+                  <span class="pricing_period">3 Months</span>
+                </div>
+                <div class="pricing__amount-price">
+                  #85,000
+                </div>
+              </div>
 
-
-            </div>
-            <div class="pricing-for-each">
-              <h2>GRAPHICS</h2>
-
-
-            </div>
-            <div class="pricing-for-each">
-              <h2>MOBILE-APP DEVELOPMENT</h2>
-
-
-            </div>
-            <div class="pricing-for-each">
-              <h2>PRODUCT DESIGN</h2>
-
-
-            </div>
-            <div class="pricing-for-each">
-              <h2>WORDPRESS AND CMS</h2>
-
-
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">virtual class</h4>
+                  <span class="pricing-day">Friday - sunday </span>
+                  <span class="pricing-time">10:00am - 3:00pm</span>
+                  <span class="pricing_period">4 Monthhs</span>
+                </div>
+                <div class="pricing__amount-price">#75,000</div>
+              </div>
             </div>
           </div>
-    </div>
-  </section>
 
-<!-- contact form for the academy -->
-  <section class="contact" id="contact">
-    <div class="container">
-      <div class="contact-header">
-        <h2>
-          <span class="reuse">contact us</span>
-        </h2>
-      </div>
-      
-      <!-- contact us form -->
-      <div class="contact-container">
-        <div class="input-field">
-          <form action="" method="get">
-                <label for="fname"></label>
-                <input type="text" placeholder="First Name" required class="name" autocomplete="on" >
+          <div class="flex__items">
+            <div class="pricing__card">
+              <div class="pricing__heading">
+                <h4 class="heading-master u-margin-bottom-medium">BACK-END DEVELOPMENT</h4>
+              </div>
 
-                <label for="lname"></label>
-                <input type="text" placeholder="Last Name" required class="name" autocomplete="on" >
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    physical class
+                  </h4>
+                  <span class="pricing-day">monday - Friday</span>
+                  <span class="pricing-time">9:00am -2:00pm</span>
+                  <span class="pricing_period">3 Months</span>
+                </div>
+                <div class="pricing__amount-price">
+                  #85,000
+                </div>
+              </div>
 
-                <label for="Email"></label>
-                <input type="email" placeholder="example@email.com" required class="email" autocomplete="on" >
-                <br>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    virtual class
+                  </h4>
+                  <span class="pricing-day">Friday - sunday </span>
+                  <span class="pricing-time">10:00am - 3:00pm</span>
+                  <span class="pricing_period">4 Months</span>
+                </div>
+                <div class="pricing__amount-price">#75,000</div>
+              </div>
+            </div>
+          </div>
 
-                <label for="phone"></label>
-                <input type="tel" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}"  class="phone"  >
+          <div class="flex__items flexRight">
+            <div class="pricing__card">
+              <div class="pricing__heading">
+                <h4 class="heading-master u-margin-bottom-medium">DATA ANALYTICS</h4>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    physical class
+                  </h4>
+                  <span class="pricing-day">monday - Friday</span>
+                  <span class="pricing-time">9:00am -2:00pm</span>
+                  <span class="pricing_period">3 Months</span>
+                </div>
+                <div class="pricing__amount-price">
+                  #85,000
+                </div>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    virtual class
+                  </h4>
+                  <span class="pricing-day">Friday - sunday </span>
+                  <span class="pricing-time">10:00am - 3:00pm</span>
+                  <span class="pricing_period">4 Months</span>
+                </div>
+                <div class="pricing__amount-price">#75,000</div>
+              </div>
+            </div>
+          </div>
 
-                <textarea name="" id="" cols="30" rows="10">Message.......
-                </textarea>
-             <input type="submit" value="Contact Us..">
+          <div class="flex__items">
+            <div class="pricing__card">
+              <div class="pricing__heading">
+                <h4 class="heading-master u-margin-bottom-medium">DIGITAL MARKETING</h4>
+              </div>
+
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    physical class
+                  </h4>
+                  <span class="pricing-day">monday - Friday</span>
+                  <span class="pricing-time">9:00am -2:00pm</span>
+                  <span class="pricing_period">3 Months</span>
+                </div>
+                <div class="pricing__amount-price">
+                  #85,000
+                </div>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    virtual class
+                  </h4>
+                  <span class="pricing-day">Friday - sunday </span>
+                  <span class="pricing-time">10:00am - 3:00pm</span>
+                  <span class="pricing_period">4 Months</span>
+                </div>
+                <div class="pricing__amount-price">#75,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <div class="pricing__card">
+              <div class="pricing__heading">
+                <h4 class="heading-master u-margin-bottom-medium">GRAPHICS</h4>
+              </div>
+            
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    physical class
+                  </h4>
+                  <span class="pricing-day">monday - Friday</span>
+                  <span class="pricing-time">9:00am -2:00pm</span>
+                  <span class="pricing_period">3 Months</span>
+                </div>
+                <div class="pricing__amount-price">
+                  #85,000
+                </div>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    virtual class
+                  </h4>
+                  <span class="pricing-day">Friday - sunday </span>
+                  <span class="pricing-time">10:00am - 3:00pm</span>
+                  <span class="pricing_period">4 Months</span>
+                </div>
+                <div class="pricing__amount-price">#75,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <div class="pricing__card">
+              <div class="pricing__heading">
+                <h4 class="heading-master u-margin-bottom-medium">MOBILE-APP DEVELOPMENT</h4>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    physical class
+                  </h4>
+                  <span class="pricing-day">monday - Friday</span>
+                  <span class="pricing-time">9:00am -2:00pm</span>
+                  <span class="pricing_period">3 Months</span>
+                </div>
+                <div class="pricing__amount-price">
+                  #85,000
+                </div>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    virtual class
+                  </h4>
+                  <span class="pricing-day">Friday - sunday </span>
+                  <span class="pricing-time">10:00am - 3:00pm</span>
+                  <span class="pricing_period">4 Monthhs</span>
+                </div>
+                <div class="pricing__amount-price">#75,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <div class="pricing__card">
+              <div class="pricing__heading">
+                <h4 class="heading-master u-margin-bottom-medium u-border-bottom">PRODUCT DESIGN</h4>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    physical class
+                  </h4>
+                  <span class="pricing-day">monday - Friday</span>
+                  <span class="pricing-time">9:00am -2:00pm</span>
+                  <span class="pricing_period">3 Months</span>
+                </div>
+                <div class="pricing__amount-price">
+                  #85,000
+                </div>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    virtual class
+                  </h4>
+                  <span class="pricing-day">Friday - sunday </span>
+                  <span class="pricing-time">10:00am - 3:00pm</span>
+                  <span class="pricing_period">4 Monthhs</span>
+                </div>
+                <div class="pricing__amount-price">#75,000</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex__items">
+            <div class="pricing__card">
+              <div class="pricing__heading">
+                <h4 class="heading-master u-margin-bottom-medium">WORDPRESS AND CMS</h4>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    physical class
+                  </h4>
+                  <span class="pricing-day">monday - Friday</span>
+                  <span class="pricing-time">9:00am -2:00pm</span>
+                  <span class="pricing_period">3 Months</span>
+                </div>
+                <div class="pricing__amount-price">
+                  #85,000
+                </div>
+              </div>
+              <div class="pricing__detail">
+                <div class="pricing__info">
+                  <h4 class="heading-class u-margin-bottom-small">
+                    virtual class
+                  </h4>
+                  <span class="pricing-day">Friday - sunday </span>
+                  <span class="pricing-time">10:00am - 3:00pm</span>
+                  <span class="pricing_period">4 Monthhs</span>
+                </div>
+                <div class="pricing__amount-price">#75,000</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- contact form for the academy -->
+    <section class="contact aa" id="contact">
+      <div class="container">
+        <h2 class="heading-secondary u-margin-bottom-big">contact us</h2>
+
+
+        <!-- contact us form -->
+        <div class="contact-container">
+          <form action="" method="get" class="form">
+            <div class="input-field">
+              <label for="fname"></label>
+              <input type="text" placeholder="First Name" required class="name" autocomplete="on">
+
+              <label for="lname"></label>
+              <input type="text" placeholder="Last Name" required class="name" autocomplete="on">
+
+              <label for="Email"></label>
+              <input type="email" placeholder="example@email.com" required class="email" autocomplete="on">
+              <br>
+
+              <label for="phone"></label>
+              <input type="tel" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{5}-[0-9]{3}" class="phone"
+                title="Enter Your phone Nmber">
+
+              <textarea name="" id="" cols="30" rows="10">Message.......
+                      </textarea>
+              <input type="submit" value="Contact Us..">
+            </div>
           </form>
-        </div>
 
-        <!-- the map to locate our academy -->
-        <div class="contact-location">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253500.04030662202!2d3.181663874884175!3d6.898003569221958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4be3ce9e1fab%3A0xbc49e9d0343768d1!2s720Degree%20Hub!5e0!3m2!1sen!2sng!4v1695904497320!5m2!1sen!2sng" width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <!-- the map to locate our academy -->
+          <div class="contact-location">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253500.04030662202!2d3.181663874884175!3d6.898003569221958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103a4be3ce9e1fab%3A0xbc49e9d0343768d1!2s720Degree%20Hub!5e0!3m2!1sen!2sng!4v1695904497320!5m2!1sen!2sng"
+              width="600" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade" class="maps"></iframe>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <div class="checkout-icon">
+      <a href="https://wa.link/qxp28a" target="_blank" class="checkout-icon__link"><img src="./images/whatsapp.png" alt="Click to ask for more details"
+          class="checkout-icon__photo"></a>
+    </div>
+  </main>
 
   <!-- footer for the academy -->
   <footer>
     <div class="container">
       <div class="footer-container">
-        <div class="left-footer">
-          <h2>ABOUT 720DEGREE ACADEMY</h2>
-          <p>
-            We are long-established, currently expanding our reach to a new spectrum of audience. Students learn real-world career-making skills to leverage real-life analytics. We provide you with every requirement to ensure your success. Most important of all, every 720degree Academy student is assigned to their specific area of academic interest. All materials can be accessed on each student's dashboard.</p>
-            <br>
+        <div class="footer-item">
+          <h2 class="heading__footer u-margin-bottom-medium">ABOUT 720DEGREE ACADEMY</h2>
+          <p class="footer__paragraph" >
+            We are long-established, currently expanding our reach to a new spectrum of audience. Students learn
+            real-world career-making skills to leverage real-life analytics. We provide you with every requirement to
+            ensure your success. Most important of all, every 720degree Academy student is assigned to their specific
+            area of academic interest. All materials can be accessed on each student's dashboard.</p>
+          
         </div>
-        <div class="center-footer">
-          <h2>720DEGREE ACADEMY</h2>
-            <address><i class="fa fa-map-marker" aria-hidden="true"></i>85, ADUN HOUSE, National Library Building, Ake, Abeokuta, Ogun State.</address>
-            <p><i class="fa fa-phone" aria-hidden="true"></i>  +234-90-164-9962</p>
-          <br>
-        
+
+        <div class="footer-item">
+          <h2 class="heading__footer u-margin-bottom-medium">720DEGREE ACADEMY</h2>
+          <address class="footer__paragraph"><i class="fas fa-location-dot icon" aria-hidden="true"></i>85, ADUN HOUSE, National Library Building, Ake,
+            Abeokuta, Ogun State.</address>
+          <p class="footer__paragraph"><i class="fas fa-phone icon" aria-hidden="true"></i> +234-90-164-9962</p>
         </div>
-        <div class="right-footer">
-          <h2>Social Account</h2>
+
+        <div class="footer-item">
+          <h2 class="heading__footer u-margin-bottom-medium">Social Account</h2>
           <div class="fa-icon">
-            <a href="https://www.facebook.com/720degreehub" target="_blank"><i class="fa fa-facebook rounded" aria-hidden="true"></i></a>
-            <a href="https://twitter.com/720degreehub" target="_blank"><i class="fa fa-twitter rounded" aria-hidden="true"></i></a>
-            <a href="https://instagram.com/720degreehub" target="_blank"><i class="fa fa-instagram rounded" aria-hidden="true"></i></a>
-            <a href="https://linkedin.com/720degreehub"><i class="fa fa-linkedin rounded" aria-hidden="true"></i></a>
-          </div> 
+            <a href="https://www.facebook.com/720degreehub" target="_blank"><i class="fab fa-facebook social-icon"
+                aria-hidden="true"></i></a>
+            <a href="https://twitter.com/720degreehub" target="_blank"><i class="fab fa-twitter social-icon"
+                aria-hidden="true"></i></a>
+            <a href="https://instagram.com/720degreehub" target="_blank"><i class="fab fa-instagram social-icon"
+                aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/720degreehub"><i class="fab fa-linkedin-in social-icon" aria-hidden="true"></i></a>
+          </div>
         </div>
       </div>
+
       <div class="news-letter">
         <h2>sign up for newsletter</h2>
         <div class="reuseable">
@@ -365,7 +675,9 @@
   </footer>
 
   <!-- copyright -->
-
-
-  </body>
+  
+  <script src="script.js"></script>
+  <!-- USING SCROLLREVEAL CDN -->
+<script src="https://unpkg.com/scrollreveal"></script>
+</body>
 </html>
